@@ -18,6 +18,7 @@ public class Encuesta {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @NotBlank(message = "Porfavor agregue un correo")
+    @Column(unique = true)
     private String correo;
     private String estiloMusical;
 }
