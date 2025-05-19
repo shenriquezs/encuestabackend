@@ -19,9 +19,9 @@ import java.util.Map;
 @ControllerAdvice
 public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 
-    @ExceptionHandler(LocalNotFoundException.class)
+    @ExceptionHandler(EncuestaNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public ResponseEntity<ErrorMessage> localNotFoundException(LocalNotFoundException exception){
+    public ResponseEntity<ErrorMessage> localNotFoundException(EncuestaNotFoundException exception){
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND,exception.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }

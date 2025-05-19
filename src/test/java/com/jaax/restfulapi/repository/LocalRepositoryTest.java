@@ -1,6 +1,5 @@
 package com.jaax.restfulapi.repository;
 
-import com.jaax.restfulapi.entity.Local;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

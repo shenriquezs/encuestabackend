@@ -1,9 +1,7 @@
 package com.jaax.restfulapi.controller;
 
 import com.jaax.restfulapi.entity.Encuesta;
-import com.jaax.restfulapi.entity.Local;
 import com.jaax.restfulapi.service.EncuestaService;
-import com.jaax.restfulapi.service.LocalService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
